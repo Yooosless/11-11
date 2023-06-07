@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Eleven11>
+
+
+<div class="container p-3">
+    <div class="row pt-4">
+      
+      <div class="col-6">
+          <h2 > Wish List</h2> 
+      </div>
+      
+       <div class="col-6 text-md-end" >
+        <a class="nav-link" asp-controller="Eleven" asp-action="Create" class="btn btn-dark" style="display: flex; align-items: center;">
+        <i class="bi bi-plus-circle-dotted"></i>
+        <h3 style="margin-bottom: 0; margin-left: 10px;">New Wish</h3>
+        </a>
+        </div>
+    </div>
+    <br/><br/>
+
+
+<table class="table table-bordered table-dark table-hover table-striped border-secondary" style="width:100%">
+    <thead>
+        <tr>
+            <th class="text-info">
+                <h4>Wish</h4>
+            </th>
+            <th class="text-info">
+            <h4>Date     ||     Time</h4>
+            </th>
+            <th>
+
+            </th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach( var obj in Model)
+        {
+            <tr>
+                <td width="70%">
+                    @obj.Name
+                </td>
+                <td width="30%">
+                    @obj.CreateDateTime
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
