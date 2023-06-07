@@ -1,7 +1,8 @@
 # 11-11
-###**11:11 and ToDoList using DotNet**
+**11:11 and ToDoList using DotNet**
 
 added a 11:11 section to the To-Do list where we will be only allowed to add notes under 1 minute time frame orelse we will get- 
+---
 ![image](https://github.com/Yooosless/11-11/assets/81465960/48911106-1b19-47d4-a481-db57ec02261f)
 
 Learnings-
